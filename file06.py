@@ -7,4 +7,18 @@ def main(data:str):
         list: return answer
     """
     
+    list=[]
+    
+    
+    for i in data.split('\n'):
+        list.append(len(i))
+    return list
+
+        
+
+f=open('txt_file/data05.txt').read()
+data=f
+print(main(data))
+
+
 # Read data from file
