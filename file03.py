@@ -8,3 +8,14 @@ def main(data:str):
     """
     
 # Read data from file
+    list = []
+    i=0
+    while i<len(data):
+        if data[i].isdigit():
+            list.append(data[i])
+        i+=1
+    return list
+
+f = open('txt_file/data03.txt').read()
+data = f
+print(main(data))
