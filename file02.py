@@ -8,3 +8,11 @@ def main(data:str):
     """
 
 # Read data from file
+
+    x=[]
+    for i in data.split(','):
+        x.append(int(i))
+    return x
+f = open('txt_file/data02.txt').read()
+data=f
+print(len(data))
